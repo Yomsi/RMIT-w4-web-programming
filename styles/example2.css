@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+header, footer{
+    text-align: center;
+    border: 2px black solid;
+    width: 100%;
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+    width: autocp;
+    gap: 10%;
+    padding: 10px;
+    margin: 10px;
+    border: 2px black solid;
+}
+
+#left{
+    width: 30%;
+    flex: auto;
+}
+
+#right{
+    width: 15%;
+    flex: auto;
+    
+}
+
+main{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    flex: 5 5 auto;
+}
+
+@media all and (max-width: 550px){
+    #main {
+        flex-direction: column;
+        height: fit-content;
+    }
+    #left{
+        flex: auto;
+    }
+    
+    #right{
+        flex: auto;
+    }
+
+}
